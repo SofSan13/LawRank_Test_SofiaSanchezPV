@@ -1,0 +1,1508 @@
+/* Index */
+
+/* 1.0 Variables and fonts */   
+    /* 1.2 STRUCTURE */
+/* 2.0 HERO */
+    /* 2.1 LOGO */
+    /* 2.2 HERO CONTENT */
+/* 3.0 MENU */
+    /* 3.1 BURGER*/
+/* 4.0 CASE RESULTS */
+    /* 4.1 RESULTS SLIDER */
+/* 5.0 INCIDENTS */
+/* 6.0 BENEFITS */
+/* 7.0 RESPONSIVE */ 
+    /* 7.1.0 RESPONSIVE 375 */
+    /* 7.1.1 RESPONSIVE 375 BODY*/ 
+    /* 7.1.2 RESPONSIVE 375 CASE RESULTS */
+    /* 7.1.3 RESPINSIVE 375 INCIDENTS */
+    /* 7.1.4 RESPONSIVE 375 BENEFITS */
+
+/* 1.0 Variables and fonts */
+
+:root{
+    /* 1.0.1?Colores */
+    --primary-color: white;
+    --color-secundario: white;
+    --color-claro: #fff;
+    --color-texto: #333;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 100 to 900*/
+
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-size: 140px;
+  font-weight: 300;
+    letter-spacing: 30%;
+    width: 1361;
+}
+
+.noto-sans-light{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 3px;
+  }
+  
+.noto-sans-medium{
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  letter-spacing: 3px;
+}
+
+.noto-sans-extra-bold{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      letter-spacing: 3px;
+  }
+
+  .noto-sans-regular{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      letter-spacing: 0.3em;     
+  }
+
+
+.noto-serif-display-regular{
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+    letter-spacing: 45px;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .manrope-bold {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.roboto-slab-semibold {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.roboto-slab-light {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+.ibm-plex-sans-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+/* 1.2 STRUCTURE */
+main section {padding:80px 0;}
+
+.ancho {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.ancho_2{
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.mitad {
+    width: calc(50% - 15px);
+    margin-left: auto;
+}
+
+.iz {margin-right: auto;margin-left: 0;}
+
+.cols {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.colsAncho {justify-content: space-between;}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+       
+/* 2.0 HERO */
+#top{
+    background-color: black;
+}
+
+#hero{
+    background-image: url(../img/hero.jpg);
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+}
+
+/* 2.1 LOGO */
+
+#lawrank_logo {
+    width: 178px;
+    background-image: url(../img/lawrank_white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 32px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#callto{
+   
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    font-size: 28px;
+    margin-top: 13px;
+}
+
+#callto a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 2.2 HERO CONTENT */
+
+#hero_content{
+    text-align: center;
+    color: white;
+    margin-top: 227px;
+
+}
+
+#hero_content button{
+    background-color: #C50A20;
+    color: white;
+        text-decoration: none;
+        padding:26px 40px;
+        border-radius: 2px;
+        margin-top: 70px;
+
+    }
+
+#hero_content button:hover{
+        cursor: pointer;
+        
+    }
+
+#hero_content h1{
+    
+  font-size: 10vw; /* vw */
+  margin-top: 110px;
+
+}
+
+#hero #callto{
+}
+
+#hero #calltoaction{
+    display: none;
+}
+
+
+/* 3.0 MENU */
+
+nav{
+    margin-top: 25px;
+}
+
+/* 3.1 BURGER*/
+
+#movil, 
+#burguer {display: none;}
+
+.menu {
+    display: inline-block;
+    width: calc(100% - 182px);
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.menu a {
+    text-decoration: none;
+    line-height:50px;
+    height: 50px;
+    width: 130px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a:link,
+.menu a:visited {
+    color:var(--color-secundario);
+    background-color: transparent;
+    transition: all .6s ease .2s;
+    box-shadow: 0px 0px 0px var(--color-secundario) inset;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.menu a:hover, 
+.menu a:active {
+    color: var(--primary-color);
+    box-shadow: 0px 0px 5px var(--color-secundario) inset;
+    text-shadow: 2px 2px 0px #000;
+}
+
+
+
+/* 4.0 CASE RESULTS */
+
+#case_results{
+    margin-top: 150px;
+    margin-bottom: 300px;
+    width: 100%;
+    background-color: black;
+}
+
+#case_results .cases_padding{
+    padding-left: 210px;
+}
+#case_results h2{
+    font-size: 100px;
+  background: -webkit-linear-gradient(17deg, rgb(212, 197, 228), rgb(168, 119, 221), rgb(221, 120, 143));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+  font-family: 'SF UI Text', sans-serif;
+  display: inline-block;
+}
+
+#case_results h1{
+    color: white;
+    font-family: 'Times';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 8px;
+
+}
+
+#case_results h3{
+    font-family: 'SF UI', 'Sans-serif';
+    color: #D85172;
+    font-size: 64;
+}
+
+.results_flex{ 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between; 
+    align-items: baseline;
+
+}
+
+#case_results button{
+    color: white;
+    align-content: right;
+    background-color: black;
+    border: 1px solid #D85172;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+}
+
+/* 4.1 RESULTS SLIDER */
+
+.container{
+    width: 95%
+}
+
+.slider-wrapper{
+    min-width: 100%;
+    margin-top: 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.slider-wrapper .card-list {
+    gap:20px; 
+    display: grid; 
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-wrapper .card-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .card{
+    padding: 100px 140px;
+    min-width: 40vw;
+    min-height: 720px;
+    background-color: white;
+}
+
+.slider-wrapper .card h5{
+    font-family: 'Times';
+    font-size: 16px;
+    letter-spacing: 8px;
+}
+
+.slider-wrapper .card p{
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+
+.slider-wrapper .card h3{
+    font-size: 64px;
+}
+
+#slide-buttons button{
+    background: none;
+    color:#D85172;
+    border: none;
+    font-size: 40px;
+}
+
+#typing{
+
+    margin-top: 40px;;
+    background-image: url(../img/typing.png);
+
+
+  min-height: 961px;
+    /* Full height */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+
+}
+
+/* 5.0 INCIDENTS */
+
+#incidents{
+    background-color: #171B24;
+    background-image: url(../img/patternwaves.png);
+    background-repeat:no-repeat;
+    background-position: top right;
+    background-size: 45%;
+}
+#incidents .ancho {
+    text-align: center; 
+    
+    padding: 100px;
+}
+
+#incidents .ancho div {
+    
+    color: white;
+    font-size: 27;
+    letter-spacing: -0.5px;
+    width: 320px;
+    margin:15px 10px;
+    line-height: 35px;
+}
+
+#incidents #load_more_btn{
+    background: none;
+    border: white 1px solid;
+    color: white;
+    padding: 30px 130px;
+    display: none;
+}
+
+/* 6.0 BENEFITS */
+
+#benefits{
+    background-color: white;
+}
+
+#benefits h2{
+        font-family: "Roboto Slab";
+        font-size: 100px;
+        font-weight: 300;
+      
+}
+#benefits .ancho{
+    padding: 100px;
+}
+#benefits .ancho .black_grid{
+    background-color: black;
+    min-height: 662px;
+    min-width: 320px;
+    padding: 80px;
+}
+
+#benefits .ancho .black_grid div{
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    min-height: 330px;
+    margin-top: 20px;
+    padding: 20px 40px 20px 20px;
+    border-style: solid;
+}
+
+#benefits .ancho .black_grid div:nth-child(1){
+}
+
+#benefits .ancho .black_grid div:nth-child(1)::after{
+    content: '';
+    height: 100%; /*You can change this if you want smaller/bigger borders*/
+    width: 5px;
+    
+    right: 0;
+    top: 0; /* If you want to set a smaller height and center it, change this value*/
+    
+    background-color: green; /* The color of your border*/
+  }
+
+#benefits .ancho .black_grid div{
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, rgb(255, 255, 255), rgba(255,0,128), rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;
+}
+
+#benefits .ancho .black_grid div h3{
+    color: white;
+    
+  font-family: "Roboto Slab";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+#benefits .ancho .black_grid div p{
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+
+}
+
+button{ 
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 36px;
+    background-color: #C50A20;
+    border: #C50A20 1px solid;
+    color: white;
+    text-decoration: none;
+    padding:26px 40px;
+    border-radius: 2px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+button:hover{
+    cursor: pointer;
+    
+}
+
+
+/* 7.0 RESPONSIVE */
+
+@media only screen and (max-width: 1480px) {
+    /* 4.0 CASE RESULTS */
+
+#case_results{
+    width: 90%;
+}
+
+/* 4.1 RESULTS SLIDER */
+
+.container{
+    width: 95%
+}
+
+}
+#typing{min-height: 70vw;} 
+
+/* RESPONSIVE 1383 */
+@media only screen and (max-width: 1383px) {
+    
+
+#case_results{
+    width: 88%;
+}
+
+
+.container{
+    width: 95%
+}
+}
+/* 4.1 END RESPONSIVE 1383 */
+
+#typing{min-width: 100vw;} 
+
+
+/* RESPINSIIVE BENEFITS */
+@media only screen and (max-width: 1269px) {
+
+
+    #benefits .ancho .black_grid div{
+        max-width: 49%;
+    }
+    
+    }
+    
+@media only screen and (max-width: 1223px) {
+ 
+#case_results{
+    padding-left: 0px;
+    width: 86%;
+}
+.container{
+    width: 95%
+
+    
+}
+ 
+#typing{min-width: 100vw;} }
+/* END 1223 */
+/* RESPONSIVE 1140 */
+
+@media only screen and (max-width: 1140px) {
+    
+    /* 2.1 LOGO */
+    
+    #lawrank_logo {
+        width: 158px;
+    }
+    #callto{
+        font-size: 26px;
+    }
+    
+    /* 2.2 HERO CONTENT */
+    
+    #hero_content{
+        text-align: center;
+        color: white;
+        margin-top: 147px;
+    
+    }
+    #hero_content button{
+        padding:26px 100px;
+    }
+    
+    #hero_content h1{
+      margin-top: 80px;
+    }
+    
+    #hero #calltoaction{
+        display: none;
+    }
+
+ 
+    #case_results{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    
+    
+    /* 4.1 RESULTS SLIDER */
+    
+    
+    .slider-wrapper{
+        margin-left: 10px;
+        width: 90vw;
+    }
+    
+    
+    .slider-wrapper .card{
+        padding: 70px 20px;
+        width: 70vw;
+    }
+    
+    }
+
+    /* RESPONSIVE 1092 */
+    @media only screen and (max-width: 1092px) {
+        
+        
+    #lawrank_logo {
+        position: relative;
+        width: 120px;
+        background-image: url(../img/lawrank_logo.svg);
+        height: 32px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    /*Attorneys' BG Image*/
+#hero{ margin-top: 1;}
+
+.ancho #callto{
+    margin: 0 0;
+    
+
+}
+#callto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    font-size: 28px;   
+    margin-left: 0px;
+    text-align: center;
+    min-width: 100%;
+    padding: 10px 0;
+
+}
+
+#callto a{
+    font-size:20px;
+    color: red;
+    text-decoration: none;
+}
+
+#hero_content{
+    margin-top: 80px;
+
+}
+
+#hero_content p{
+    font-size: 20px;
+
+}
+
+#hero_content h1{
+    
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+
+#hero_content button{
+    font-size: 20px;
+        padding:22px 50px;
+        border-radius: 2px;
+        margin-top: 20px;
+
+    }
+
+#hero_content button:hover{
+        cursor: pointer;
+        
+    }
+    
+
+
+/* MENU */
+
+nav{
+    margin-top: 25px;
+}
+
+/*BURGER*/
+
+#burguer {
+    margin-top: 40px;
+    padding: 8px;
+    border-radius: 0px;
+}
+
+#burguer div {
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+.menu {
+    display: inline-block;
+    width: calc(100% - 2px);
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.menu a {
+    text-decoration: none;
+    line-height:50px;
+    height: 50px;
+    width: 130px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a:link,
+.menu a:visited {
+    color:var(--color-secundario);
+    background-color: transparent;
+    transition: all .6s ease .2s;
+    box-shadow: 0px 0px 0px var(--color-secundario) inset;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.menu a:hover, 
+.menu a:active {
+    color: var(--primary-color);
+    box-shadow: 0px 0px 5px var(--color-secundario) inset;
+    text-shadow: 2px 2px 0px #000;
+}
+ 
+    /* INCIDENTS */
+    #incidents{
+        background-image: none;
+    }
+    /* 4.0 CASE RESULTS */
+    
+    #case_results{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    
+    #case_results .cases_padding{
+        padding-left: 80px;
+        padding-bottom: 10px;
+    }
+    
+    #case_results h2{
+        font-size: 60px;
+      margin-top: 30px;
+        margin-bottom: 1px;
+    }
+    
+    #case_results h3{
+        font-family: 'SF UI Text', sans-serif;
+      margin-top: 30px;
+        margin-bottom: 1px;
+    }
+    
+    #case_results button{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    
+    /* 4.1 RESULTS SLIDER */
+    
+    
+    .slider-wrapper{
+        margin-left: 70px;
+        width: 90vw;
+    }
+    
+    
+    .slider-wrapper .card{
+        padding: 70px 20px;
+        width: 70vw;
+    }
+    
+    }
+@media only screen and (max-width: 1075px) {    
+    #lawrank_logo {
+           width: 118px !important;
+       }
+       #callto{
+           font-size: 22px  !important;
+       }
+       
+       #hero_content button{
+           padding:26px 100px  !important;
+       }
+       
+       .menu {
+           width: calc(100% - 140px)  !important;
+       }
+       
+       }
+/* RESPONSIVE 1045*/
+
+@media only screen and (max-width: 1085px) { 
+    
+   #hero{
+    margin-top: 60px;
+   }
+    #hero p{    
+        margin-top: -20px;
+        font-size: 25px;
+    }
+    #hero h1{
+        
+        margin-top: 80px;
+        /* font-size: 80px; */
+        letter-spacing: 0.3em;
+    }
+
+    #hero button{
+        margin-top: 10px;
+    }
+
+    #burguer {
+        box-sizing: border-box;
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        padding: 6px;
+        border-radius: 6px;
+    }
+
+    #burguer div {
+        background-color: var(--primary-color);
+        height: 3px;
+        border-radius: 3px;
+        transition: all 1s;
+    }
+
+    #burguer div:nth-child(2) {margin:7px 0;}
+
+    #movil:checked ~ #burguer div:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+    #movil:checked ~ #burguer div:nth-child(2) {
+        opacity: 0;
+    }
+    #movil:checked ~ #burguer div:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .menu {
+        box-sizing: border-box;
+        position:absolute;
+        top:84px;
+        left: 0;
+        min-width: 100%;
+        background-color: rgba(0, 0, 0, 0.847);
+        transition: all 1s;
+        height: 0px;
+        overflow: hidden;
+    }
+    .menu a {
+        display: block;
+        border-radius: 0;
+        width: 100% !important; 
+        border-bottom: 1px solid var(--color-claro);
+    }
+
+    #movil:checked ~ .menu {
+        height: 204px;
+    }
+
+    #lawrank_logo {
+        position: relative;
+        width: 120px;
+        background-image: url(../img/lawrank_logo.svg);
+        height: 32px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    /*Attorneys' BG Image*/
+#hero{ margin-top: 1;}
+
+.ancho #callto{
+    margin: 0 0;
+    
+
+}
+#callto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    font-size: 28px;   
+    margin-left: 0px;
+    text-align: center;
+    min-width: 100%;
+    padding: 10px 0;
+
+}
+
+#callto a{
+    font-size:20px;
+    color: red;
+    text-decoration: none;
+}
+
+
+#hero_content{
+    margin-top: 80px;
+
+}
+
+#hero_content p{
+    font-size: 20px;
+
+}
+
+#hero_content h1{
+    
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+
+#hero_content button{
+    font-size: 20px;
+        padding:22px 50px;
+        border-radius: 2px;
+        margin-top: 20px;
+
+    }
+
+#hero_content button:hover{
+        cursor: pointer;
+        
+    }
+    
+
+    @media only screen and (max-width: 880px) {
+    
+    #incidents{
+        padding-bottom: 50px;
+    }
+    #incidents .ancho {
+        text-align: center; 
+        
+        padding: 100px;
+        padding-bottom: 50px;
+    }
+    
+    #incidents .ancho div {
+        
+        color: white;
+        font-size: 27;
+        letter-spacing: -0.5px;
+        width: 320px;
+        margin:15px 10px;
+        line-height: 35px;
+    }
+    
+     
+    #incidents .ancho  .incident:nth-child(4), 
+    #incidents .ancho  .incident:nth-child(5), 
+    #incidents .ancho  .incident:nth-child(6), 
+    #incidents .ancho  .incident:nth-child(7), 
+    #incidents .ancho  .incident:nth-child(8), 
+    #incidents .ancho  .incident:nth-child(9) {
+        display: none;
+        
+    }
+    #incidents #load_more_btn{
+        margin: auto;
+        font-size: 10px;
+        padding: 10px 50px;
+        display: block;
+    }
+ }
+@media only screen and (max-width: 744px) {
+
+   #hero{
+    margin-top: 60px;
+   }
+    #hero p{    
+        margin-top: -20px;
+        font-size: 25px;
+    }
+    #hero h1{
+        
+        margin-top: 80px;
+        /* font-size: 80px; */
+        letter-spacing: 0.3em;
+    }
+
+    #hero button{
+        margin-top: 10px;
+    }
+
+    #burguer {
+        box-sizing: border-box;
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        padding: 6px;
+        border-radius: 6px;
+    }
+
+    #burguer div {
+        background-color: var(--primary-color);
+        height: 3px;
+        border-radius: 3px;
+        transition: all 1s;
+    }
+
+    #burguer div:nth-child(2) {margin:7px 0;}
+
+    #movil:checked ~ #burguer div:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+    #movil:checked ~ #burguer div:nth-child(2) {
+        opacity: 0;
+    }
+    #movil:checked ~ #burguer div:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .menu {
+        box-sizing: border-box;
+        position:absolute;
+        top:84px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.847);
+        transition: all 1s;
+        height: 0px;
+        overflow: hidden;
+    }
+    .menu a {
+        display: block;
+        border-radius: 0;
+        width: 100% !important; 
+        border-bottom: 1px solid var(--color-claro);
+    }
+
+    #movil:checked ~ .menu {
+        height: 204px;
+    }
+
+
+
+} /*Termina 774*/
+
+/* 3.2? 645px */
+@media only screen and (max-width: 645px) {
+    #lawrank_logo {
+        width: 178px;
+        background-image: url(../img/lawrank_logo.svg);
+        height: 32px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}/* Termina 645px */
+
+
+
+
+/* END RESPINSIIVE BENEFITS */
+
+/* 7.2.0 RESPONSIVE 1480 */
+/* 7.1.0 RESPONSIVE 375 */
+/* 7.1.1 RESPONSIVE 375 BODY*/
+
+@media only screen and (max-width: 580px) {
+
+    #benefits .ancho .black_grid div{
+        max-width: 70%;
+}
+    #benefits h2{
+            font-size: 32px;
+          
+    }
+    #benefits .ancho{
+        padding-left: 40px;
+    }
+    
+    
+    #benefits .ancho .black_grid{
+        background-color: black;
+        min-height: 662px;
+        max-width: 340px;
+        padding: 0px;
+        padding-left: 20px;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+    }
+    
+    #benefits .ancho .black_grid div{
+        margin-top: 20px;
+        padding-left: 0px; /* CAMBIAR PARA DAR ESPACIO AL BORDE*/
+        min-height: 240px;
+        max-width: 300px;
+        border-style: solid;
+        max-height: 300px;
+    }
+    
+    #benefits .ancho .black_grid div h3{
+        color: white;
+        
+      font-family: "Roboto Slab";
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 36px;
+    }
+    
+    #benefits .ancho .black_grid div p{
+        color: white;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 36px;
+    
+    }
+}
+@media only screen and (max-width: 375px) {
+    #lawrank_logo {
+        position: relative;
+        width: 120px;
+        background-image: url(../img/lawrank_logo.svg);
+        height: 32px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    /*Attorneys' BG Image*/
+#hero{ margin-top: 1;}
+
+.ancho #callto{
+    margin: 0 0;
+    
+
+}
+#callto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    font-size: 28px;   
+    margin-left: 0px;
+    text-align: center;
+    min-width: 100%;
+    padding: 10px 0;
+
+}
+
+#callto a{
+    font-size:20px;
+    color: red;
+    text-decoration: none;
+}
+
+#hero_content{
+    margin-top: 80px;
+
+}
+
+#hero_content p{
+    font-size: 20px;
+
+}
+
+#hero_content h1{
+    
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+
+#hero_content button{
+    font-size: 20px;
+        padding:22px 50px;
+        border-radius: 2px;
+        margin-top: 20px;
+
+    }
+
+#hero_content button:hover{
+        cursor: pointer;
+        
+    }
+    
+
+
+/* MENU */
+#movil{}
+/*BURGER*/
+
+#burguer div {
+    position:absolute;
+    top:80px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+#burguer {
+    box-sizing: border-box;
+    display: block;
+    border:solid 3px white;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+#burguer div {
+    background-color: none;
+    height: 3px;
+    border-radius: 3px;
+    transition: all 1s;
+}
+
+#burguer div:nth-child(2) {margin:3px 0;}
+
+#movil:checked ~ #burguer div:first-child {
+    transform: translateY(6px) rotate(45deg);
+}
+#movil:checked ~ #burguer div:nth-child(2) {
+    opacity: 0;
+}
+#movil:checked ~ #burguer div:last-child {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu {
+    box-sizing: border-box;
+    position:absolute;
+    top:84px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 1s;
+    height: 0px;
+    overflow: hidden;
+}
+.menu a {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--color-claro);
+}
+
+#movil:checked ~ .menu {
+    height: 204px;
+}
+
+/* 7.1.2 RESPONSIVE 375 CASE RESULTS */
+
+/* 4.0 CASE RESULTS */
+
+#case_results{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#case_results .cases_padding{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#case_results h2{
+    font-size: 60px;
+  margin-top: 30px;
+    margin-bottom: 1px;
+}
+
+#case_results h3{
+    font-family: 'SF UI Text', sans-serif;
+  margin-top: 30px;
+    margin-bottom: 1px;
+}
+
+#case_results button{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* 4.1 RESULTS SLIDER */
+
+
+.slider-wrapper{
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+.slider-wrapper .card-list {
+    padding-left: 0px;
+    gap:15px; 
+}
+
+.slider-wrapper .card-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .card{
+    padding: 70px 20px;
+    min-width: 276px;
+    min-height: 720px;
+    background-color: white;
+}
+
+.slider-wrapper .card h5{
+    font-family: 'Times';
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+
+.slider-wrapper .card p{
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+
+.slider-wrapper h3{
+    font-size:xx-small;
+    color: #D85172;
+    font-family: 'SF UI Text';
+                        
+}
+
+
+
+#case_results #typing{
+
+    margin-top: 10px;
+    background-image: url(../img/typing.png);
+    /* Full height */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+
+}
+
+/* 7.1.3 RESPINSIVE 375 INCIDENTS */
+
+
+/* 7.1.4 RESPONSIVE 375 BENEFITS */
+
+
+
+/*
+#benefits .ancho .black_grid div:nth-child(1)::after{
+    content: '';
+    height: 100%; /*You can change this if you want smaller/bigger borders*
+    width: 5px;
+    
+    right: 0;
+    top: 0; /* If you want to set a smaller height and center it, change this value*
+    
+    background-color: green; /* The color of your border*
+  }
+
+#benefits .ancho .black_grid div{
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;
+}
+#benefits .ancho .black_grid div:nth-child(3){
+    border-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    }
+
+#benefits .ancho .black_grid div:nth-child(4){
+        border-width: 1px;
+        border-right-style: solid;
+        border-right-color: white;
+        border-bottom-color: black;
+    }
+
+#benefits .ancho .black_grid div:nth-child(5){
+        border-width: 1px;
+        border-right-style: solid;
+        border-right-color: white;
+        border-bottom-color: black;
+    }
+
+#benefits .ancho .black_grid div:nth-child(6){
+    border-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-color: black;
+    }
+*/
+#benefits button { 
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 36px;
+    background-color: #C50A20;
+    border: #C50A20 1px solid;
+    padding:16px 30px;
+    border-radius: 2px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    min-width: 340px;
+    margin: 0 auto;
+}
+#benefits button:hover{
+    cursor: pointer;
+    
+}
+
+/*
+.clicker {
+    cursor:pointer;
+    }
+
+    .clicker:focus + .incident:nth-child(4),
+    .clicker:focus + .incident:nth-child(5),
+    .clicker:focus + .incident:nth-child(6),
+    .clicker:focus + .incident:nth-child(7),
+    .clicker:focus + .incident:nth-child(8),
+    .clicker:focus + .incident:nth-child(9){
+        display:block;
+        } */
+} /* ENDS 375 RESPONSIVE */
