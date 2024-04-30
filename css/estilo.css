@@ -1447,11 +1447,7 @@ background-size: cover;
 #hero{
     background-image: url(../img/hero.jpg);
 
-    background-position: center center;
-
     background-repeat: round;
-    
-    background-size: contain;
 
 }
 
