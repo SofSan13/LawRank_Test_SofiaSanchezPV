@@ -1444,16 +1444,6 @@ background-size: cover;
 
     @media only screen and (max-width: 374px) {
 
-#hero{
-
-    background-image: url(../img/hero.jpg);
-     background-repeat: no-repeat;
-    
-background-position: top left;;
-background-size: contain;
-
-}
-
     #burguer {
         box-sizing: border-box;
         display: block;
