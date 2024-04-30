@@ -1449,7 +1449,7 @@ background-size: cover;
 
     background-position: center center;
 
-    background-repeat: no-repeat;
+    background-repeat: round;
     
     background-size: contain;
 
