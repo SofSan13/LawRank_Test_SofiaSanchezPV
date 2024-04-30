@@ -1441,3 +1441,68 @@ background-size: cover;
         display:block;
         } */
 } /* ENDS 375 RESPONSIVE */
+
+    @media only screen and (max-width: 374px) {
+
+#hero{
+    background-image: url(../img/hero.jpg);
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+
+}
+
+    #burguer {
+        box-sizing: border-box;
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        padding: 6px;
+        border-radius: 6px;
+    }
+
+    #burguer div {
+        background-color: var(--primary-color);
+        height: 3px;
+        border-radius: 3px;
+        transition: all 1s;
+    }
+
+    #burguer div:nth-child(2) {margin:7px 0;}
+
+    #movil:checked ~ #burguer div:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+    #movil:checked ~ #burguer div:nth-child(2) {
+        opacity: 0;
+    }
+    #movil:checked ~ #burguer div:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .menu {
+        box-sizing: border-box;
+        position:absolute;
+        top:84px;
+        left: 0;
+        min-width: 100%;
+        background-color: rgba(0, 0, 0, 0.847);
+        transition: all 1s;
+        height: 0px;
+        overflow: hidden;
+    }
+    .menu a {
+        display: block;
+        border-radius: 0;
+        width: 100% !important; 
+        border-bottom: 1px solid var(--color-claro);
+    }
+
+        
+    }
