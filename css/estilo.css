@@ -1450,7 +1450,7 @@ background-size: cover;
      background-repeat: no-repeat;
     
 background-position: top left;;
-width: 100vw;
+background-size: contain;
 
 }
 
