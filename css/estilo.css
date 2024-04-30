@@ -1446,7 +1446,7 @@ background-size: cover;
 
 #hero{
    
-  max-height: 300px;
+  max-height: 20vw;
 
     background-image: url(../img/hero.jpg);
      background-repeat: no-repeat;
